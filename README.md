@@ -1,5 +1,9 @@
 # Pipelining Hazards and Timing Diagram
 This project takes in up to 4 lines of MIPS code, identifies any pipelining hazards, and prints the timing diagram with and without a data forwarding unit.
+Written by Hannah Ashton in September 2023 using Code::Blocks.
+
+<img width="390" alt="image" src="https://github.com/hcharise/Pipeline-Stalls-and-Stages/assets/110205350/2b7d69d3-a193-47a3-8f31-9f4a895845cf">
+
 
 # Overall Structure
 The main function uses a loop to allow the user to repeatedly (if desired) enter sets of instructions and print their hazards and pipelining diagrams. Within each of these loops, the program asks how many instructions there will be, then passes the input into the appropriate functions to print the instructions without a solution (showing where the hazards exist), with stalling but no forwarding, and with stalling and forwarding. The program then asks if the user would like to repeat this for a new set of instructions.
