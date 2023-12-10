@@ -4,20 +4,16 @@ CSE 661
 September 14th, 2023
 
 Final Exam
-MIPS Pipelining Stages/Stalls
+Pipelining Hazards and Timing Diagram
+This project takes in up to 4 lines of MIPS code, identifies any pipelining hazards, and prints
+the timing diagram (Fetch, Decode, Execute, Memory, Write Back) with and without a data forwarding unit.
 */
 
-/*
--- FEEDBACK!!! --
-lw s0, 0(s2)
-sw s0, 0(s3)
-Results in a stall for the lw when forwarding, but this does not make any sense.....!!
-*/
 
 /*
-SAMPLE TESTS
+SAMPLE INSTRUCTIONS
+can be used as input to test program
 
-** USE ME **
 lw $t0, 0($s2)
 add $s2, $s2, $a4
 add $t0, $t0, $a5
