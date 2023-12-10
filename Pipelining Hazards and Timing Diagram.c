@@ -213,7 +213,7 @@ int main() {
     char offsets[4][4] = {NULL, NULL, NULL, NULL}; // Array to hold offsets for lw and sw instructions
 
     // Loops to repeat full program if running repeatedly
-    while (repeat == 'Y') {
+    while (repeat == 'Y' || repeat == 'y') {
 
         // Print directions
         printf("How many instructions are there?\n");
